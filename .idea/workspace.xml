@@ -27,16 +27,25 @@
       <file leaf-file-name="runner.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runner.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="8" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
+            <state line="3" column="24" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problem9.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/problem9.rb">
+      <file leaf-file-name="problem3.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/problem3.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="47" selection-start="549" selection-end="549" vertical-scroll-proportion="0.54285717">
+            <state line="14" column="18" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="32" selection-start="540" selection-end="540" vertical-scroll-proportion="0.71428573">
               <folding />
             </state>
           </provider>
@@ -56,8 +65,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/runner.rb" />
         <option value="$PROJECT_DIR$/problem9.rb" />
+        <option value="$PROJECT_DIR$/problem3.rb" />
+        <option value="$PROJECT_DIR$/runner.rb" />
+        <option value="$PROJECT_DIR$/utils.rb" />
       </list>
     </option>
   </component>
@@ -181,7 +192,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -189,7 +200,7 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14752372" sideWeight="0.67025864" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -233,16 +244,30 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/runner.rb">
+    <entry file="file://$PROJECT_DIR$/problem9.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
+        <state line="24" column="32" selection-start="635" selection-end="635" vertical-scroll-proportion="0.6857143">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problem9.rb">
+    <entry file="file://$PROJECT_DIR$/problem3.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="47" selection-start="549" selection-end="549" vertical-scroll-proportion="0.54285717">
+        <state line="14" column="18" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="32" selection-start="540" selection-end="540" vertical-scroll-proportion="0.71428573">
           <folding />
         </state>
       </provider>

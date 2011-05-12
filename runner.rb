@@ -1,3 +1,5 @@
-require("./problem9")
+require("./problem3")
+require("./utils")
 
-Problem9.run
+p Utils.get_primes(100000)
+
