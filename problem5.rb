@@ -7,18 +7,11 @@ class Problem5
   def Problem5.run(n)
     divisors = Array(1..n).reverse
     max = Utils.factorial(n)
-    (n..max).each do |i|
-      good = true
-      divisors.each do |d|
-        if i % d != 0
-          good = false
-          break
-        end
-      end
-      if good
-        puts i
-        break
-      end
+
+    divisors.each do |x|
+      divisors.delete_if{|d| x != d && x % d == 0}
     end
+
+    puts (n..max).step(n).find{|i| not divisors.any?{|d| i % d != 0} }
   end
 end
