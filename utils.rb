@@ -8,6 +8,15 @@ class Utils
       end
       primes.delete_if { |x| x != p && x % p == 0 }
     end
-    primes
+  end
+
+  def Utils.get_factors n
+    max_factor = Math.sqrt(n)
+    initial_factors = (1..max_factor).select{|x| n % x == 0}
+    factors = initial_factors.clone
+    initial_factors.each do |x|
+      factors.push(n / x)
+    end
+    factors.sort
   end
 end

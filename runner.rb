@@ -1,5 +1,8 @@
 require("./utils")
-require("./problem3")
+require("./problem5")
 
-#p Utils.get_primes(100)
-Problem3.run
+start = Time.now
+
+Problem5.run 10
+
+puts "\nTime to execute: #{Time.now - start} s"
