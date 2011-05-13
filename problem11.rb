@@ -30,6 +30,24 @@ class Problem11
       end
     end
 
-    p products
+    (0...nums.length).each do |x|
+      (0..nums[x].length - 4).each do |y|
+        products << nums[y][x] * nums[y + 1][x] * nums[y + 2][x] * nums[y + 3][x]
+      end
+    end
+
+    (0..nums.length - 4).each do |y|
+      (0..nums[y].length - 4).each do |x|
+        products << nums[y][x] * nums[y + 1][x + 1] * nums[y + 2][x + 2] * nums[y + 3][x + 3]
+      end
+    end
+
+    (4...nums.length).each do |y|
+      (0..nums.length - 4).each do |x|
+        products << nums[y][x] * nums[y - 1][x + 1] * nums[y - 2][x + 2] * nums[y - 3][x + 3]
+      end
+    end
+
+    p products.max
   end
 end
