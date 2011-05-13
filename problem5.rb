@@ -5,12 +5,17 @@ class Problem5
   #What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
   def Problem5.run(n)
-    i = 0
-    divisors = Array(1..n)
-    while 1
-      i += 1
-      factors = Utils.get_factors(i)
-      if !divisors.any?{|x| !factors.include? x}
+    divisors = Array(1..n).reverse
+    max = Utils.factorial(n)
+    (n..max).each do |i|
+      good = true
+      divisors.each do |d|
+        if i % d != 0
+          good = false
+          break
+        end
+      end
+      if good
         puts i
         break
       end
