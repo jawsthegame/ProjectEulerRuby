@@ -1,3 +1,5 @@
-require("problem6")
+require("./utils")
+require("./problem3")
 
-Problem6.new.run();
+#p Utils.get_primes(100)
+Problem3.run
