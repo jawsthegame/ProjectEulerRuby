@@ -1,8 +1,8 @@
 require("./utils")
-require("./problem17")
+require("./problem18")
 
 start = Time.now
 
-Problem17.run 1000
+Problem18.run
 
 puts "Time to execute: #{Time.now - start} s"
