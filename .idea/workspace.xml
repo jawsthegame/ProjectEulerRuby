@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71554bfc-6e8f-44a7-af6c-bde955d355a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/problem18.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/problem17.rb" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/names.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/problem20.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/problem21.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/problem22.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/problem23.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/problem25.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problem1.rb" afterPath="$PROJECT_DIR$/problem01.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problem2.rb" afterPath="$PROJECT_DIR$/problem02.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problem3.rb" afterPath="$PROJECT_DIR$/problem03.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problem4.rb" afterPath="$PROJECT_DIR$/problem04.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problem5.rb" afterPath="$PROJECT_DIR$/problem05.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problem6.rb" afterPath="$PROJECT_DIR$/problem06.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problem7.rb" afterPath="$PROJECT_DIR$/problem07.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problem8.rb" afterPath="$PROJECT_DIR$/problem08.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/problem9.rb" afterPath="$PROJECT_DIR$/problem09.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/problem18.rb" afterPath="$PROJECT_DIR$/problem18.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runner.rb" afterPath="$PROJECT_DIR$/runner.rb" />
     </list>
     <ignored path="Ruby.iws" />
@@ -32,16 +46,16 @@
       <file leaf-file-name="runner.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runner.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="20" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+            <state line="5" column="4" selection-start="61" selection-end="65" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problem18.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/problem18.rb">
+      <file leaf-file-name="problem25.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/problem25.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="5" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.73547095">
+            <state line="8" column="49" selection-start="216" selection-end="216" vertical-scroll-proportion="0.19238476">
               <folding />
             </state>
           </provider>
@@ -61,20 +75,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/problem3.rb" />
-        <option value="$PROJECT_DIR$/problem5.rb" />
-        <option value="$PROJECT_DIR$/problem7.rb" />
-        <option value="$PROJECT_DIR$/problem8.rb" />
-        <option value="$PROJECT_DIR$/problem10.rb" />
         <option value="$PROJECT_DIR$/problem11.rb" />
-        <option value="$PROJECT_DIR$/utils.rb" />
         <option value="$PROJECT_DIR$/problem12.rb" />
         <option value="$PROJECT_DIR$/problem13.rb" />
         <option value="$PROJECT_DIR$/problem14.rb" />
         <option value="$PROJECT_DIR$/problem16.rb" />
         <option value="$PROJECT_DIR$/problem17.rb" />
-        <option value="$PROJECT_DIR$/runner.rb" />
         <option value="$PROJECT_DIR$/problem18.rb" />
+        <option value="$PROJECT_DIR$/problem20.rb" />
+        <option value="$PROJECT_DIR$/problem21.rb" />
+        <option value="$PROJECT_DIR$/problem22.rb" />
+        <option value="$PROJECT_DIR$/data/problem23.rb" />
+        <option value="$PROJECT_DIR$/problem23.rb" />
+        <option value="$PROJECT_DIR$/problem24.rb" />
+        <option value="$PROJECT_DIR$/utils.rb" />
+        <option value="$PROJECT_DIR$/runner.rb" />
+        <option value="$PROJECT_DIR$/problem25.rb" />
       </list>
     </option>
   </component>
@@ -123,8 +139,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -145,14 +159,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="Errors" />
     <property name="recentsLimit" value="5" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="Errors" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Ruby.runner">
     <configuration default="false" name="runner" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
@@ -255,16 +271,16 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24929178" sideWeight="0.67175573" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994911" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -303,16 +319,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/problem3.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="240" selection-end="240" vertical-scroll-proportion="0.26506025" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problem5.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="58" selection-start="502" selection-end="502" vertical-scroll-proportion="0.46258503" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problem11.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="23" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.8226087" />
@@ -338,26 +344,65 @@
         <state line="26" column="34" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils.rb">
+    <entry file="file://$PROJECT_DIR$/problem20.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="14" selection-end="22" vertical-scroll-proportion="0.015852047" />
+        <state line="8" column="7" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problem1.rb">
+    <entry file="file://$PROJECT_DIR$/problem01.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runner.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="20" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+        <state line="17" column="27" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/problem18.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="5" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.73547095">
+        <state line="33" column="49" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problem21.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="225" selection-end="225" vertical-scroll-proportion="0.24048096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problem22.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="310" selection-end="310" vertical-scroll-proportion="0.28857717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problem23.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="5" selection-start="807" selection-end="807" vertical-scroll-proportion="0.59118235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="61" selection-end="65" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problem25.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="49" selection-start="216" selection-end="216" vertical-scroll-proportion="0.19238476">
           <folding />
         </state>
       </provider>
