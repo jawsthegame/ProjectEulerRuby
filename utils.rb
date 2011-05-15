@@ -1,5 +1,4 @@
 class Utils
-  Infinity = 1.0/0
 
   def Utils.get_primes n
     max_non_prime = Integer(Math.sqrt(n))
@@ -48,4 +47,8 @@ module Enumerable
       end
     end
   end
+end
+
+module Constants
+  INFINITY = 1.0 / 0
 end

@@ -1,16 +1,14 @@
-require("bigdecimal")
-require("bigdecimal/util")
+require("./utils")
 
 class Problem25
-  $count = 0
-  def Problem25.next_fibonacci a, b
-    $count += 1
-    return a if Math.log10(BigDecimal.new("#{a}")) >= 999
-    next_fibonacci b, a + b
-  end
-
   def Problem25.run
-    next_fibonacci(1, 1)
-    $count
+    prev_num = 1
+    current_num = 1
+    (1..Constants::INFINITY).each do |i|
+      return i if prev_num.to_s.chars.count == 1000
+      next_num = prev_num + current_num
+      prev_num = current_num
+      current_num = next_num
+    end
   end
 end
