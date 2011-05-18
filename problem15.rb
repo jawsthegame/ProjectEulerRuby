@@ -1,5 +1,6 @@
 class Problem15
-  def Problem15.run size
+  def Problem15.run
+    size = 20
     pascal = []
 
     first_row = []

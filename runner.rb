@@ -1,8 +1,19 @@
-require("./utils")
-require("./problem28")
+while 1
+  puts "Problem #: "
+  problem_number = gets.chomp()
+  if problem_number == ""
+    exit
+  end
 
-start = Time.now
+  require("./utils")
+  if true
+    require("./problem#{problem_number}")
+  end
 
-p Problem28.run
+  start = Time.now
 
-puts "Time to execute: #{Time.now - start} s"
+  problem = Object::const_get("Problem#{problem_number}")
+  problem.run
+
+  puts "Time to execute: #{Time.now - start} s"
+end

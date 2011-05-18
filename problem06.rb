@@ -1,5 +1,5 @@
-class Problem6
-  def run()
+class Problem06
+  def Problem06.run
     max = 100
 
     sum_of_squares = 0

@@ -1,8 +1,9 @@
 class Problem14
   $lengths = {}
 
-  def Problem14.run max
-    (1..max).each do |n|
+  def Problem14.run
+    max = 1_000_000
+    (1...max).each do |n|
       $lengths[n] = get_chain_length(n, 0)
     end
     max_value = $lengths.values.max

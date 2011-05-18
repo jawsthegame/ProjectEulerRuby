@@ -1,12 +1,12 @@
-class Problem2
+class Problem02
   $sum = 0
 
-  def run()
+  def Problem02.run
     next_fibonacci(1, 2)
     p $sum
   end
 
-  def next_fibonacci(a, b)
+  def Problem02.next_fibonacci(a, b)
     if a > 4000000
       return
     end

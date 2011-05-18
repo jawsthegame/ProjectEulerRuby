@@ -1,4 +1,4 @@
-class Problem9
+class Problem09
   #A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
   #a^2 + b^2 = c^2
   #
@@ -9,7 +9,7 @@ class Problem9
 
   $max = 500
 
-  def Problem9.run
+  def Problem09.run
     i = 1
     found = false
     while i <= $max
