@@ -13,7 +13,10 @@ while 1
   start = Time.now
 
   problem = Object::const_get("Problem#{problem_number}")
-  problem.run
 
+  puts
+  problem.run
+  puts
   puts "Time to execute: #{Time.now - start} s"
+  puts
 end
