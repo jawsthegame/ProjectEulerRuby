@@ -1,3 +1,20 @@
+require("./utils")
+
 class Problem30
-  # To change this template use File | Settings | File Templates.
+  def Problem30.run
+    power = 5
+    min = 2**power
+    nums = []
+
+    (min..Constants::INFINITY).each do |x|
+      sum = 0
+      String(x).chars.each do |ch|
+        sum += Integer(ch)**power
+      end
+      break if x > 1000000
+      nums << x if sum == x
+    end
+
+    nums.inject(:+)
+  end
 end
