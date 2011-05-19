@@ -37,6 +37,10 @@ class Utils
   def Utils.get_nth_prime n
     (1..Infinity).lazy_select{|x| Utils.is_prime? x}.take(n).last
   end
+
+  def Utils.solve_quadratic a, b, c
+
+  end
 end
 
 module Enumerable
