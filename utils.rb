@@ -38,8 +38,8 @@ class Utils
     (1..Infinity).lazy_select{|x| Utils.is_prime? x}.take(n).last
   end
 
-  def Utils.solve_quadratic a, b, c
-
+  def Utils.get_pandigitals n
+    (1..n).to_a.permutation(n).to_a.collect{|x| Integer(x.join)}.sort
   end
 end
 

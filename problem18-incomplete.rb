@@ -1,13 +1,7 @@
 class Problem18
-  $sums = []
-
-#  $nums = []
-#  $nums << [3]
-#  $nums << [7, 4]
-#  $nums << [2, 4, 6]
-#  $nums << [8, 5, 9, 3]
-
+  #$sums = []
   $nums = []
+  $sum = 0
 
   def Problem18.populate_triangle
     $nums << [75]
@@ -27,40 +21,58 @@ class Problem18
     $nums << [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23]
   end
 
-  def Problem18.go_left current_y, current_x, sum
-    sum += $nums[current_y][current_x]
-    if current_y == $nums.length - 1
-      $sums << sum
-      return
+  def Problem18.next_move current_x, current_y
+    return if current_y + 1 == $nums.length
+    $sum += $nums[current_y][current_x]
+    left_branch = $nums[current_y + 1][current_x]
+    right_branch = $nums[current_y + 1][current_x + 1]
+    if left_branch > right_branch
+      next_move(current_x, current_y + 1)
+    else
+      next_move(current_x + 1, current_y + 1)
     end
-
-    next_x = current_x == 0 ? 0 : current_x - 1
-    next_y = current_y + 1
-
-    go_left(next_y, next_x, sum)
-    go_right(next_y, next_x, sum)
-  end
-
-  def Problem18.go_right current_y, current_x, sum
-    sum += $nums[current_y][current_x]
-    if current_y == $nums.length - 1
-      $sums << sum
-      return
-    end
-
-    next_x = current_x == $nums[current_y].length - 1 ? $nums[current_y].length - 1 : current_x + 1
-    next_y = current_y + 1
-
-    go_left(next_y, next_x, sum)
-    go_right(next_y, next_x, sum)
   end
 
   def Problem18.run
     populate_triangle
-
-    go_left 0, 0, 0
-
-    puts $sums.length
-    puts $sums.max
+    next_move(0, 0)
+    puts $sum
   end
+
+  #def Problem18.go_left current_y, current_x, sum
+  #  sum += $nums[current_y][current_x]
+  #  if current_y == $nums.length - 1
+  #    $sums << sum
+  #    return
+  #  end
+  #
+  #  next_x = current_x == 0 ? 0 : current_x - 1
+  #  next_y = current_y + 1
+  #
+  #  go_left(next_y, next_x, sum)
+  #  go_right(next_y, next_x, sum)
+  #end
+  #
+  #def Problem18.go_right current_y, current_x, sum
+  #  sum += $nums[current_y][current_x]
+  #  if current_y == $nums.length - 1
+  #    $sums << sum
+  #    return
+  #  end
+  #
+  #  next_x = current_x == $nums[current_y].length - 1 ? $nums[current_y].length - 1 : current_x + 1
+  #  next_y = current_y + 1
+  #
+  #  go_left(next_y, next_x, sum)
+  #  go_right(next_y, next_x, sum)
+  #end
+  #
+  #def Problem18.run
+  #  populate_triangle
+  #
+  #  go_left 0, 0, 0
+  #
+  #  puts $sums.length
+  #  puts $sums.max
+  #end
 end
