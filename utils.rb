@@ -41,6 +41,14 @@ class Utils
   def Utils.get_pandigitals n
     (1..n).to_a.permutation(n).to_a.collect{|x| Integer(x.join)}.sort
   end
+
+  def Utils.get_pandigitals_with_zero n
+    (0..n).to_a.permutation(n).to_a.collect{|x| Integer(strip_leading_zero(x.join))}.sort
+  end
+  
+  def Utils.strip_leading_zero x
+    x.sub(/^0/, "")
+  end
 end
 
 module Enumerable
