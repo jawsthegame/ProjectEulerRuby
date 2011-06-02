@@ -12,5 +12,6 @@ class Problem23
   def Problem23.run
     sum = 0
     (24..28123).each{|x| sum += x if cannot_be_written_as_sum x}
+    puts "Answer: #{sum}"
   end
 end
