@@ -14,7 +14,7 @@ class Utils
 
   def Utils.get_factors n
     max_factor = Math.sqrt(n)
-    initial_factors = (1..max_factor).select{|x| n % x == 0}
+    initial_factors = (1..max_factor).select { |x| n % x == 0 }
     factors = initial_factors.clone
     initial_factors.each do |x|
       factors.push(n / x)
@@ -31,23 +31,27 @@ class Utils
   end
 
   def Utils.is_prime? n
-    !(2..n - 1).any?{|x| n % x == 0} && n != 1
+    n > 1 && !(2..n - 1).any? { |x| n % x == 0 }
   end
 
   def Utils.get_nth_prime n
-    (1..Infinity).lazy_select{|x| Utils.is_prime? x}.take(n).last
+    (1..Infinity).lazy_select { |x| Utils.is_prime? x }.take(n).last
   end
 
   def Utils.get_pandigitals n
-    (1..n).to_a.permutation(n).to_a.collect{|x| Integer(x.join)}.sort
+    (1..n).to_a.permutation(n).to_a.collect { |x| Integer(x.join) }.sort
   end
 
   def Utils.get_pandigitals_with_zero n
-    (0..n).to_a.permutation(n).to_a.collect{|x| Integer(strip_leading_zero(x.join))}.sort
+    (0..n).to_a.permutation(n).to_a.collect { |x| Integer(strip_leading_zero(x.join)) }.sort
   end
-  
+
   def Utils.strip_leading_zero x
     x.sub(/^0/, "")
+  end
+
+  def Utils.is_triangle_number n
+    (-1 + Math.sqrt(1 + 8 * n)) / 2 % 1 == 0
   end
 end
 
