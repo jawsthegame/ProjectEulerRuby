@@ -38,12 +38,8 @@ class Utils
     (1..Infinity).lazy_select { |x| Utils.is_prime? x }.take(n).last
   end
 
-  def Utils.get_pandigitals n
-    (1..n).to_a.permutation(n).to_a.collect { |x| Integer(x.join) }.sort
-  end
-
-  def Utils.get_pandigitals_with_zero n
-    (0..n).to_a.permutation(n).to_a.collect { |x| Integer(strip_leading_zero(x.join)) }.sort
+  def Utils.get_pandigitals first, last
+    (first..last).to_a.permutation(last - first + 1).to_a.select{|x| x[0] != 0}.collect{|x| Integer(x.join)}.sort
   end
 
   def Utils.strip_leading_zero x

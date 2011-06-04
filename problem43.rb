@@ -2,11 +2,12 @@ require("./utils")
 
 class Problem43
 	def Problem43.run
-    pandigitals = Utils.get_pandigitals_with_zero(9)
-    puts pandigitals.length
+    good_ones = []
+    pandigitals = Utils.get_pandigitals(0, 9)
     pandigitals.each do |x|
-      puts x if check(x)
+      good_ones << x if check(x)
     end
+    puts "Answer: #{good_ones.inject(:+)}"
 	end
   
   def Problem43.check x
