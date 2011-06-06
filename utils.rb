@@ -49,6 +49,14 @@ class Utils
   def Utils.is_triangle_number n
     (-1 + Math.sqrt(1 + 8 * n)) / 2 % 1 == 0
   end
+
+  def Utils.is_pentagonal_number n
+    (1 + Math.sqrt(1 + 24 * n)) / 6 % 1 == 0
+  end
+  
+  def Utils.get_pentagonal_number n
+	n * (3 * n - 1) / 2
+  end
 end
 
 module Enumerable
