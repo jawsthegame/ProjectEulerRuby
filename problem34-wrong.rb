@@ -3,6 +3,7 @@ require("./utils")
 class Problem34
   def Problem34.run
     factorials = {
+				0=>0,
         1=>1,
         2=>Utils.factorial(2),
         3=>Utils.factorial(3),
@@ -14,25 +15,18 @@ class Problem34
         9=>Utils.factorial(9),
         10=>Utils.factorial(10),
     }
-
-    results = {}
-
-    (3..9999999).each do |n|
-      results[n] = []
-      string_n = String(n)
+		
+    (3..factorials[10]).each do |n|
       sum = 0
-      (0...string_n.length).each do |i|
-        x = Integer(string_n[i..i])
-        if x > 0
-          fac = factorials[x]
-          sum += fac
-          results[n] << fac
-        end
-      end
-      if n == sum
-        p results[n]
-        puts n
-      end
+			n.to_s.chars.to_a.each do |c|
+				break if sum > n
+				sum += factorials[get_integer(c)]
+			end
+			puts n if n == sum
     end
   end
+		
+	def Problem34.get_integer ch
+		ch == "0" ? 0 : Integer(ch)
+	end
 end
