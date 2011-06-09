@@ -23,8 +23,8 @@ class Utils
   end
 
   def Utils.factorial n
-    if n == 1
-      return n
+    if n <= 1
+      return 1
     else
       return n * factorial(n - 1)
     end
