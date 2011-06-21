@@ -46,6 +46,10 @@ class Utils
     x.sub(/^0/, "")
   end
 
+  def Utils.strip_leading_zeroes x
+    x.sub(/^0+/, "")
+  end
+
   def Utils.is_triangle_number n
     (-1 + Math.sqrt(1 + 8 * n)) / 2 % 1 == 0
   end
