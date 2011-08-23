@@ -59,7 +59,15 @@ class Utils
   end
   
   def Utils.get_pentagonal_number n
-	n * (3 * n - 1) / 2
+    n * (3 * n - 1) / 2
+  end
+  
+  def Utils.get_reverse n
+    Integer(strip_leading_zeroes(n.to_s.reverse))
+  end
+  
+  def Utils.is_palindrome n
+    n.to_s == n.to_s.reverse
   end
 end
 
